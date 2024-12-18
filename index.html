@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylel.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-</body>
+  </head>
+  <body>
+    <section class="left">
+      <h1>Maksiowość</h1>
+      <div class="dvd-container">
+        <div class="dvd"></div>
+      </div>
+      <div class="beka">
+        <div class="train"><img src="images/train.png" alt="sss" /></div>
+      </div>
+    </section>
+    <section class="right">
+      <h1>Wojtusiowość</h1>
+      <div class="forecast">
+        <script type="module" src="./ScriptWojto/scriptForecast.js"></script>
+      </div>
+      <div class="bmi">
+        <input id="weight" type="number" placeholder="waga [kg]" />
+        <input id="height" type="number" placeholder="wzrost [cm]" />
+        <p id="result"></p>
+        <button id="onBMI" type="submit">Licz</button>
+        <script type="module" src="./ScriptWojto/scriptBMI.js"></script>
+      </div>
+    </section>
+  </body>
+  <script src="scirptMaks.js"></script>
 </html>

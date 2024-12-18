@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  background-color: red;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100vh;
+}
+
+.left {
+  border-right: 5px solid black;
+}
+.right {
+  background-color: lightblue;
+  border-left: 5px solid black;
+}
