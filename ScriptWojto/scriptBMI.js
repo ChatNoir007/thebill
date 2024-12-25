@@ -3,10 +3,11 @@ const height = document.getElementById("height");
 const result = document.getElementById("result");
 const onBMI = document.getElementById("onBMI");
 
+let mode = 1;
 onBMI.addEventListener("click", () => {
   let weightV = weight.value;
   let heightV = height.value;
-  let mode = 1;
+
   const resultV = weightV / (heightV * heightV * 0.0001);
   if (mode == 1) {
     if (resultV >= 30) {
@@ -17,11 +18,24 @@ onBMI.addEventListener("click", () => {
       result.innerHTML = "Prawidłowo";
     } else if (resultV >= 17) {
       result.innerHTML = "Niedowaga";
+    } else if (resultV >= "0") {
+      result.innerHTML = "Wygłodzenie";
     } else {
-      result.innerHTML = "wygłodzenie wtf";
+      result.innerHTML = "Podaj prawidłowe dane";
     }
+
+    height.disabled = true;
+    weight.disabled = true;
+
     onBMI.innerText = "Resetuj";
+    mode = 0;
   } else {
+    weight.disabled = false;
+    height.disabled = false;
+    height.value = "";
+    weight.value = "";
+    result.innerHTML = "";
     onBMI.innerText = "Licz";
+    mode = 1;
   }
 });

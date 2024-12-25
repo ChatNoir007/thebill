@@ -1,0 +1,19 @@
+.zuk {
+  width: 200px;
+}
+.bmi {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.bmi .bmi-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1vh;
+}
+
+.bmi button {
+  cursor: pointer;
+}

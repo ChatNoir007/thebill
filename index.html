@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="stylel.css" />
+    <link rel="stylesheet" href="cssWojto/wojto.css" />
     <title>Document</title>
   </head>
   <body>
@@ -22,13 +23,22 @@
       <div class="forecast">
         <script type="module" src="./ScriptWojto/scriptForecast.js"></script>
       </div>
+
       <div class="bmi">
-        <input id="weight" type="number" placeholder="waga [kg]" />
-        <input id="height" type="number" placeholder="wzrost [cm]" />
+        <h2>Kalkulator BMI</h2>
+        <div class="bmi-content">
+          <input id="weight" type="number" placeholder="waga [kg]" />
+          <input id="height" type="number" placeholder="wzrost [cm]" />
+          <button id="onBMI" type="submit">Licz</button>
+        </div>
         <p id="result"></p>
-        <button id="onBMI" type="submit">Licz</button>
         <script type="module" src="./ScriptWojto/scriptBMI.js"></script>
       </div>
+
+      <br /><br />
+
+      <h1>Dziadzia</h1>
+      <img class="zuk" src="/images/zuk.jpg" alt="żuk" />
     </section>
   </body>
   <script src="scirptMaks.js"></script>
